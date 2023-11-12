@@ -174,7 +174,9 @@ export function mostrarPropiedades(propiedades, contenedorId) {
               } Habitaciones | <i class="fas fa-bath"></i> ${
       propiedad.banos
     } Baños</p>
-              <p><i class="fas fa-dollar-sign"></i> ${propiedad.costo}</p>
+              <p><i class="fas fa-dollar-sign"></i> ${propiedad.costo.toLocaleString( //retorna una representacion localizada del número en forma de texto
+                "es-CL"
+              )}</p> 
               <p class="${permitirFumar}">
                 <i class="${
                   propiedad.smoke ? "fas fa-smoking" : "fas fa-smoking-ban"

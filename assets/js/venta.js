@@ -1,5 +1,5 @@
-import { propiedades_venta, mostrarPropiedades } from './propiedades.js';
+import { propiedades_venta, mostrarPropiedades } from "./propiedades.js";
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
   mostrarPropiedades(propiedades_venta, "venta");
 });
