@@ -215,7 +215,7 @@ export function mostrarPropiedades(propiedades, contenedorId) {
       }</a>
       </div>
     `
-    : `<a href="index.html" class="btn btn-dark">Volver a todas las propiedades</a>`;
+    : `<div class="col-md-12 text-center mt-3"><a href="index.html" class="btn btn-dark">Volver a todas las propiedades</a></div>`;
 
   contenedor.innerHTML += botonHTML;
 }
