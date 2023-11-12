@@ -1,8 +1,8 @@
 .main-section {
-    background-image: url('../img/img-main.jpeg');
+    background-image: url('../img/inicio.webp');
     background-size: cover; /* La imagen cubrirá todo el ancho y largo */
-    background-position: center;
-    height: 300px;
+    background-position: center bottom;
+    height: 550px;
     display: flex;
     align-items: center;
     justify-content: center;

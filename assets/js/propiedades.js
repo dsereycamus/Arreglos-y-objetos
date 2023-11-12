@@ -35,6 +35,42 @@ export const propiedades_venta = [
     smoke: false,
     pets: true,
   },
+  {
+    nombre: "Hermosa casa en medio de bosque",
+    src: "https://images.adsttc.com/media/images/61ca/2e16/b038/0601/6505/32e8/large_jpg/casa-bosque-jardin.jpg?1640640053",
+    descripcion:
+      "Esta hermosa casa ofrece un lugar tranquilo, con unas vistas maravillosas",
+    ubicacion: "Avenida siempre viva, bosque City, 123",
+    habitaciones: 5,
+    banos: 3,
+    costo: 5800,
+    smoke: true,
+    pets: true,
+  },
+  {
+    nombre: "Hermosa casa en medio de bosque",
+    src: "https://images.adsttc.com/media/images/61ca/2e16/b038/0601/6505/32e8/large_jpg/casa-bosque-jardin.jpg?1640640053",
+    descripcion:
+      "Esta hermosa casa ofrece un lugar tranquilo, con unas vistas maravillosas",
+    ubicacion: "Avenida siempre viva, bosque City, 123",
+    habitaciones: 5,
+    banos: 3,
+    costo: 5800,
+    smoke: true,
+    pets: true,
+  },
+  {
+    nombre: "Hermosa casa en medio de bosque",
+    src: "https://images.adsttc.com/media/images/61ca/2e16/b038/0601/6505/32e8/large_jpg/casa-bosque-jardin.jpg?1640640053",
+    descripcion:
+      "Esta hermosa casa ofrece un lugar tranquilo, con unas vistas maravillosas",
+    ubicacion: "Avenida siempre viva, bosque City, 123",
+    habitaciones: 5,
+    banos: 3,
+    costo: 5800,
+    smoke: true,
+    pets: true,
+  },
 ];
 
 export const propiedades_alquiler = [
@@ -64,7 +100,7 @@ export const propiedades_alquiler = [
   },
   {
     nombre: "Condominio moderno en zona residencial",
-    src: "https://images.unsplash.com/photo-1567496898669-ee935f5f647a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbmRvfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1000&q=60",
+    src: "https://admin.lider.com.pe/storage/img/posts/b-162506875260dc94d00f9e6.jpg",
     descripcion:
       "Este elegante condominio moderno está ubicado en una tranquila zona residencial",
     ubicacion: "123 Main Street, Anytown, CA 91234",
@@ -74,10 +110,49 @@ export const propiedades_alquiler = [
     smoke: false,
     pets: false,
   },
+  {
+    nombre: "Maravillos hogar con gran patio",
+    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfndwADhfTUtaHhm5BEDJO71TXgFeRO_-ovDPxAdxp0Rix8JlN",
+    descripcion:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+    ubicacion: "678 hello Street, ashentown, 568",
+    habitaciones: 3,
+    banos: 1,
+    costo: 2800,
+    smoke: false,
+    pets: true,
+  },
+  {
+    nombre: "Maravillos hogar con gran patio",
+    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfndwADhfTUtaHhm5BEDJO71TXgFeRO_-ovDPxAdxp0Rix8JlN",
+    descripcion:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+    ubicacion: "678 hello Street, ashentown, 568",
+    habitaciones: 3,
+    banos: 1,
+    costo: 2800,
+    smoke: false,
+    pets: true,
+  },
+  {
+    nombre: "Maravillos hogar con gran patio",
+    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfndwADhfTUtaHhm5BEDJO71TXgFeRO_-ovDPxAdxp0Rix8JlN",
+    descripcion:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+    ubicacion: "678 hello Street, ashentown, 568",
+    habitaciones: 3,
+    banos: 1,
+    costo: 2800,
+    smoke: false,
+    pets: true,
+  },
 ];
 
 export function mostrarPropiedades(propiedades, contenedorId) {
   const contenedor = document.getElementById(contenedorId);
+
+  let newHtml = `<div class="row">`;
+
   propiedades.forEach((propiedad) => {
     const permitirFumar = propiedad.smoke ? "text-success" : "text-danger";
     const permitirMascotas = propiedad.pets ? "text-success" : "text-danger";
@@ -119,21 +194,28 @@ export function mostrarPropiedades(propiedades, contenedorId) {
         </div>
       `;
 
-    contenedor.innerHTML += propiedadHTML;
+    newHtml += propiedadHTML;
   });
 
-  // Agregar el botón "Ver todas las propiedades" después de las propiedades
-  const botonHTML = `
+  newHtml += `</div>`;
+
+  contenedor.innerHTML += newHtml;
+
+  const showVentas = window.location.pathname.includes("index");
+  // Agregar el botón "Ver todas las propiedades" después de propiedades
+  const botonHTML = showVentas
+    ? `
       <div class="col-md-12 text-center mt-3">
         <a href="${
           contenedorId === "venta"
             ? "propiedades_venta.html"
             : "propiedades_alquiler.html"
         }" class="btn btn-dark">Ver todas las propiedades en ${
-    contenedorId === "venta" ? "venta" : "alquiler"
-  }</a>
+        contenedorId === "venta" ? "venta" : "alquiler"
+      }</a>
       </div>
-    `;
+    `
+    : `<a href="index.html" class="btn btn-dark">Volver a todas las propiedades</a>`;
 
   contenedor.innerHTML += botonHTML;
 }
