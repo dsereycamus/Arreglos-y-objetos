@@ -37,7 +37,7 @@ export const propiedades_venta = [
   },
   {
     nombre: "Hermosa casa en medio de bosque",
-    src: "https://images.adsttc.com/media/images/61ca/2e16/b038/0601/6505/32e8/large_jpg/casa-bosque-jardin.jpg?1640640053",
+    src: "https://casasvichuquen.cl/wp-content/uploads/2022/09/casamiravallenueva-03.png",
     descripcion:
       "Esta hermosa casa ofrece un lugar tranquilo, con unas vistas maravillosas",
     ubicacion: "Avenida siempre viva, bosque City, 123",
@@ -49,19 +49,19 @@ export const propiedades_venta = [
   },
   {
     nombre: "Hermosa casa en medio de bosque",
-    src: "https://images.adsttc.com/media/images/61ca/2e16/b038/0601/6505/32e8/large_jpg/casa-bosque-jardin.jpg?1640640053",
+    src: "https://d1cfu8v5n1wsm.cloudfront.net/toctoc/fotos/20171002/869057/m_wm_2020062550356319424.jpg",
     descripcion:
       "Esta hermosa casa ofrece un lugar tranquilo, con unas vistas maravillosas",
     ubicacion: "Avenida siempre viva, bosque City, 123",
     habitaciones: 5,
     banos: 3,
     costo: 5800,
-    smoke: true,
-    pets: true,
+    smoke: false,
+    pets: false,
   },
   {
     nombre: "Hermosa casa en medio de bosque",
-    src: "https://images.adsttc.com/media/images/61ca/2e16/b038/0601/6505/32e8/large_jpg/casa-bosque-jardin.jpg?1640640053",
+    src: "https://http2.mlstatic.com/D_NQ_NP_839640-MLC53605509708_022023-O.webp",
     descripcion:
       "Esta hermosa casa ofrece un lugar tranquilo, con unas vistas maravillosas",
     ubicacion: "Avenida siempre viva, bosque City, 123",
@@ -69,7 +69,7 @@ export const propiedades_venta = [
     banos: 3,
     costo: 5800,
     smoke: true,
-    pets: true,
+    pets: false,
   },
 ];
 
@@ -112,7 +112,7 @@ export const propiedades_alquiler = [
   },
   {
     nombre: "Maravillos hogar con gran patio",
-    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfndwADhfTUtaHhm5BEDJO71TXgFeRO_-ovDPxAdxp0Rix8JlN",
+    src: "https://images.unsplash.com/photo-1571055107559-3e67626fa8be?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     descripcion:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     ubicacion: "678 hello Street, ashentown, 568",
@@ -124,27 +124,27 @@ export const propiedades_alquiler = [
   },
   {
     nombre: "Maravillos hogar con gran patio",
-    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfndwADhfTUtaHhm5BEDJO71TXgFeRO_-ovDPxAdxp0Rix8JlN",
+    src: "https://images.unsplash.com/photo-1430285561322-7808604715df?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     descripcion:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     ubicacion: "678 hello Street, ashentown, 568",
     habitaciones: 3,
     banos: 1,
     costo: 2800,
-    smoke: false,
+    smoke: true,
     pets: true,
   },
   {
     nombre: "Maravillos hogar con gran patio",
-    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfndwADhfTUtaHhm5BEDJO71TXgFeRO_-ovDPxAdxp0Rix8JlN",
+    src: "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     descripcion:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     ubicacion: "678 hello Street, ashentown, 568",
     habitaciones: 3,
     banos: 1,
     costo: 2800,
-    smoke: false,
-    pets: true,
+    smoke: true,
+    pets: false,
   },
 ];
 
